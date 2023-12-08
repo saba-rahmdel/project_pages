@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tutorial</title>
+    <link rel="stylesheet" href="./logo_navigation.css">
+    
+
+
+
+
+
+
+</head>
+
+
+<body>
+
+
+      
+      
+    <div class="topnav-right">
+
+
+            <section class="nav">
+
+          
+
+            <div class="logo">logo</div>
+            <input id="menu-toggle" type="checkbox" />
+            <label class="menu-button-container" for="menu-toggle">
+              <div class="menu-button"></div>
+            </label>
+            
+            <ul class="menu">
+              <li>Home</li>
+              <li>products</li>
+              <li>About</li>
+              <li>Contact</li>
+            </ul>
+          </section>
+            
+          
+            <div class="header">
+<h1>welcome to our website</h1>
+</div>
+</div>
+
+ 
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="./image/why-choose-upvc-windows-and-doors-in-coimbatore.jpg" style="width:100%">
+      <div class="text">Caption Text</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="./image/all-you-need-to-know-about-upvc-windows.jpg" style="width:100%">
+      <div class="text">Caption Two</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="./image/all-that-you-need-to-know-about-upvc-windows-multi-chamber.jpg" style="width:100%">
+      <div class="text">Caption Three</div>
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+ 
+
+
+
+
+
+
+
+
+    
+    <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+<br>
+<p class="groove">
+<section id="Products-menu">
+    <h2 class="Products-menu-heading">Products </h2>
+    <div class="Products-menu-container container">
+      <div class="Products-menu-item">
+        <div class="Products-img">
+          <img src="./image/all-that-you-need-to-know-about-upvc-windows-multi-chamber.jpg" alt="" />
+        </div>
+        <div class="Products-description">
+          <h2 class="food-titile">Products Item 1</h2>
+        </div>
+      </div>
+
+      <div class="Products-menu-item">
+        <div class="Products-img">
+          <img src="./image/all-you-need-to-know-about-upvc-windows.jpg" alt="error"/>
+        </div>
+        <div class="Products-description">
+          <h2 class="Products-titile">Products Item 2</h2>
+        </div>
+      </div>
+      <div class="Products-menu-item">
+        <div class="Products-img">
+          <img src="./image/all-you-need-to-know-about-upvc-windows.jpg" alt="" />
+        </div>
+        <div class="Products-description">
+          <h2 class="Products-titile">Products Item 3</h2>
+        </div>
+      </div>
+      <div class="Products-menu-item">
+        <div class="Products-img">
+          <img src="./image/why-choose-upvc-windows-and-doors-in-coimbatore.jpg" alt="" />
+        </div>
+        <div class="Products-description">
+          <h2 class="Products-titile">Products Item 4</h2>
+        </div>
+      </div>
+      <div class="Products-menu-item">
+        <div class="Products-img">
+          <img src="./image/all-that-you-need-to-know-about-upvc-windows-multi-chamber.jpg" alt="" />
+        </div>
+        <div class="Products-description">
+          <h2 class="Products-titile">Products Item 5</h2>
+        </div>
+      </div>
+      <div class="Products-menu-item">
+        <div class="Products-img">
+          <img src="./image/all-you-need-to-know-about-upvc-windows.jpg" alt="" />
+        </div>
+        <div class="Products-description">
+          <h2 class="Products-titile">Products Item 6</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+</p>
+<p class="groove">
+    
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
